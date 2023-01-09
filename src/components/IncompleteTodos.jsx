@@ -10,8 +10,8 @@ export const IncompleteTodos = (props) => {
           return (
             <div key={todo} className="list-row">
               <li>{todo}</li>
-              <button onCLick={() => onClickComplete(index)}>完了</button>
-              <button onCLick={() => onClickDelete(index)}>削除</button>
+              <button onClick={() => onClickComplete(index)}>完了</button>
+              <button onClick={() => onClickDelete(index)}>削除</button>
             </div>
           );
         })}

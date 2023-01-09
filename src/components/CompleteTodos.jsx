@@ -10,7 +10,7 @@ export const CompleteTodos = (props) => {
           return (
             <div key={todo} className="list-row">
               <li>{todo}</li>
-              <button onCLick={() => onClickBack(index)}>戻す</button>
+              <button onClick={() => onClickBack(index)}>戻す</button>
             </div>
           );
         })}
